@@ -42,7 +42,7 @@ function HeroContent() {
         Hello, I'm 👋
       </motion.p>
 
-      <motion.h1 variants={itemVariants} className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[0.9] tracking-tight">
+      <motion.h1 variants={itemVariants} className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-none tracking-tight">
 
         PARVINDER
 

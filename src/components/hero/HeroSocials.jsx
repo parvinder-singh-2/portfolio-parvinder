@@ -18,7 +18,7 @@ function HeroSocials() {
       whileInView={{ opacity: 1, y: 0 }}
       initial={{ opacity: 0, y: 25 }}
       transition={{ duration: 0.7, delay: 0.6 }}
-      className="mt-8 gap-4 flex">
+      className="mt-6 gap-4 flex">
 
       {socials.map((Icon, index) => (
         <button

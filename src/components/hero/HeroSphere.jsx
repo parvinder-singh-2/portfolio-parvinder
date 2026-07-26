@@ -9,7 +9,7 @@ function HeroSphere() {
         className="
           w-full
           max-w-xs
-          sm:max-w-sm
+          sm:max-w-xs
           md:max-w-md
           lg:max-w-lg
           xl:max-w-xl
