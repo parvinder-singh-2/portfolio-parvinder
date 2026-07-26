@@ -72,20 +72,20 @@ function HeroContent() {
             whileHover={{
                   x:8,
               }}
-            className={`flex flex-col sm:flex-row gap-5 mt-5 ${
+            className={`flex flex-col sm:flex-row gap-3 mt-5 ${
               index !== aboutHighlights.length - 1
                 ? "border-b border-white/10 pb-3"
                 : ""
             }`}
           >
             {/* Icon */}
-
-            <motion.div
-              whileHover={{
+            <div className="gap-5 flex flex-row lg:flex-row items-center">
+              <motion.div
+                whileHover={{
                   rotate:12,
                   scale:1.1,
-              }}
-              className="
+                }}
+                className="
                 flex
                 h-14
                 w-14
@@ -98,22 +98,21 @@ function HeroContent() {
                 border
                 border-violet-500/20
                 bg-violet-500/10
-              "
-            >
-              <Icon className="text-3xl text-violet-500" />
-            </motion.div>
+                "
+                >
+                <Icon className="text-3xl text-violet-500" />
+              </motion.div>
 
             {/* Content */}
 
-            <div>
               <h3 className="mb-1 text-xl sm:text-2xl font-semibold text-white">
                 {item.title}
               </h3>
+            </div>
 
               <p className="text-sm sm:text-base leading-7 text-gray-400">
                 {item.description}
               </p>
-            </div>
           </motion.div>
         );
       })}
