@@ -3,7 +3,7 @@ import AvailabilityCard from "./AvailabilityCard";
 
 function ContactContent() {
   return (
-    <div className="mt-10 grid gap-8 lg:grid-cols-[1fr_1fr]">
+    <div className="mt-10 grid gap-8 lg:grid-cols-2 w-full">
       <ContactInfo />
 
       <AvailabilityCard />

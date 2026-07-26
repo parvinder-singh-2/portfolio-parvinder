@@ -1,6 +1,6 @@
 function ProjectStats({ stats }) {
   return (
-    <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6 mt-10 rounded-2xl border border-violet-500/20 p-6">
+    <div className="grid md:grid-cols-3 lg:grid-cols-6 grid-cols-2 gap-6 mt-10 rounded-2xl border border-violet-500/20 p-6">
 
       {stats.map((item) => {
         const Icon = item.icon;
@@ -16,11 +16,11 @@ function ProjectStats({ stats }) {
 
             <div>
 
-              <p className="font-bold text-xl">
+              <p className="font-bold text-md">
                 {item.value}
               </p>
 
-              <p className="text-sm text-gray-400">
+              <p className="text-xs text-gray-400">
                 {item.label}
               </p>
 

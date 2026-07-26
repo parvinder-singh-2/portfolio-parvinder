@@ -16,11 +16,11 @@ function AwardShowcase({ award }) {
 
             <div>
 
-              <h2 className="text-4xl font-bold">
+              <h2 className="lg:text-4xl text-2xl font-bold">
                 {award.title}
               </h2>
 
-              <p className="mt-3 text-2xl font-semibold text-violet-500">
+              <p className="lg:mt-3 mt-0 lg:text-2xl text-xl font-semibold text-violet-500">
                 {award.subtitle}
               </p>
 
@@ -28,7 +28,7 @@ function AwardShowcase({ award }) {
 
           </div>
 
-          <p className="mt-5 max-w-2xl text-lg leading-10 text-gray-300">
+          <p className="mt-5 max-w-2xl lg:text-lg text-sm leading-5 lg:leading-10 text-gray-300">
             {award.description}
           </p>
 

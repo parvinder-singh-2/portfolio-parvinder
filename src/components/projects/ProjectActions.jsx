@@ -2,7 +2,7 @@ import { FaGithub, FaExternalLinkAlt, FaFileAlt } from "react-icons/fa";
 
 function ProjectActions({ github, live, caseStudy }) {
   return (
-    <div className="mt-5 gap-4 grid grid-cols-3">
+    <div className="mt-5 gap-4 grid lg:grid-cols-3 grid-cols-1">
       {github && (
         <a
           href={github}

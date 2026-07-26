@@ -13,6 +13,7 @@ function ContactInfo() {
       transition={{ duration: 0.6 }}
       className="
         rounded-3xl
+        w-full
         border
         border-white/10
         bg-white/[0.03]
