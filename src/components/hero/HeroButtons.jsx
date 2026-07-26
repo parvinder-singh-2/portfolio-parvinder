@@ -8,7 +8,7 @@ function HeroButtons() {
       whileInView={{ opacity: 1, y: 0 }}
       initial={{ opacity: 0, y: 25 }}
       transition={{ duration: 0.7, delay: 0.6 }}
-      className="mt-10 flex flex-col gap-4 sm:flex-row">
+      className="mt-8 flex flex-col gap-4 sm:flex-row">
 
       <button
         className="
@@ -17,15 +17,19 @@ function HeroButtons() {
         items-center
         justify-center
         gap-3
-        rounded-2xl
         bg-violet-600
-        px-8
-        py-4
+        rounded-xl
+        px-6
+        py-3.5
+        sm:px-8
+        sm:py-4
         font-semibold
         transition-all
         duration-300
         hover:bg-violet-500
         hover:scale-105
+        w-full 
+        sm:w-auto
       "
       >
         View My Work
@@ -35,16 +39,20 @@ function HeroButtons() {
 
       <button
         className="
+        w-full s
+        m:w-auto
         group
         flex
         items-center
         justify-center
         gap-3
-        rounded-2xl
         border
         border-violet-500
-        px-8
-        py-4
+        rounded-xl
+        px-6
+        py-3.5
+        sm:px-8
+        sm:py-4
         font-semibold
         transition-all
         duration-300

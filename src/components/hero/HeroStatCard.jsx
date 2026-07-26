@@ -12,7 +12,8 @@ function HeroStatCard({
       border
       border-white/10
       bg-white/[0.03]
-      p-6
+      p-5
+      sm:p-6
       backdrop-blur-xl
       transition-all
       duration-500
@@ -22,19 +23,24 @@ function HeroStatCard({
       hover:shadow-violet-600/10
     "
     >
-      <div className="flex gap-5">
+      <div className="flex gap-4">
 
         <div
           className="
           mb-6
           flex
-          h-16
-          w-16
+          h-12
+          w-12
+          sm:h-14
+          sm:w-14
+          lg:h-16
+          lg:w-16
+          text-2xl
+          sm:text-3xl
           items-center
           justify-center
-          rounded-2xl
+          rounded-3xl
           bg-violet-500/10
-          text-3xl
           text-violet-400
           transition-all
           duration-300
@@ -46,16 +52,16 @@ function HeroStatCard({
           <Icon />
         </div>
 
-        <h3 className="text-5xl font-bold">
+        <h3 className="text-3xl sm:text-4xl lg:text-5xlfont-bold">
           {value}
         </h3>
       </div>
 
-      <p className="mt-2 text-xl font-semibold">
+      <p className="mt-2 text-lg sm:text-xl font-semibold">
         {title}
       </p>
 
-      <p className="mt-2 text-sm text-zinc-400">
+      <p className="mt-2 text-xs sm:text-sm text-zinc-400">
         {subtitle}
       </p>
     </div>

@@ -1,14 +1,21 @@
-
-import hero1 from "../../assets/hero1.png"
-
 function HeroSphere() {
   return (
-    <div className="">
+    <div className="flex justify-center lg:justify-end">
       <img
-      src={hero1}
-      alt="Parvinder Singh Gandhi"
-      className="rounded-3xl h-[700px]"
-    />
+        src={hero1}
+        alt="Parvinder Singh Gandhi"
+        className="
+          w-full
+          max-w-xs
+          sm:max-w-sm
+          md:max-w-md
+          lg:max-w-xl
+          xl:max-w-2xl
+          h-auto
+          object-contain
+          select-none
+        "
+      />
     </div>
   );
 }

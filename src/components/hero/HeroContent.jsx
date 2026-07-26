@@ -38,22 +38,22 @@ function HeroContent() {
       animate="show"
     >
 
-      <motion.p variants={itemVariants} className="mb-5 text-violet-400 text-lg sm:text-xl lg:text-2xl tracking-wide">
+      <motion.p variants={itemVariants} className="mb-5 text-violet-400 text-base sm:text-lg lg:text-xl tracking-wide">
         Hello, I'm 👋
       </motion.p>
 
-      <motion.h1 variants={itemVariants} className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black leading-[0.9] tracking-tight">
+      <motion.h1 variants={itemVariants} className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[0.9] tracking-tight">
 
         PARVINDER
 
         <br />
 
-        <motion.span variants={itemVariants} className="bg-gradient-to-r text-5xl sm:text-6xl lg:text-7xl from-blue-400 via-violet-400 to-purple-500 bg-clip-text text-transparent ">
+        <motion.span variants={itemVariants} className="bg-gradient-to-r text-4xl sm:text-5xl md:text-6xl lg:text-7xl from-blue-400 via-violet-400 to-purple-500 bg-clip-text text-transparent ">
           SINGH GANDHI
         </motion.span>
 
       </motion.h1>
-      <motion.div variants={itemVariants} className="mt-6 h-10 sm:h-12">
+      <motion.div variants={itemVariants} className="mt-5 h-8 sm:h-10 md:h-12">
         <TypeAnimation
           sequence={[
             "Full Stack Developer",
@@ -71,8 +71,9 @@ function HeroContent() {
           speed={45}
           repeat={Infinity}
           className="
-            text-xl
-            sm:text-2xl
+            text-lg
+            sm:text-xl
+            md:text-2xl
             lg:text-3xl
             font-semibold
             text-blue-400
@@ -80,7 +81,7 @@ function HeroContent() {
         />
       </motion.div>
 
-      <motion.p variants={itemVariants} className=" mt-0 max-w-2xl text-zinc-300 text-base sm:text-lg lg:text-xl leading-8  ">
+      <motion.p variants={itemVariants} className="mt-2 max-w-xl text-sm leading-7 text-zinc-300 sm:text-base md:text-lg">
         I build scalable and efficient web applications with
         React, FastAPI and PostgreSQL. Passionate about solving
         real-world problems through code and creating meaningful
