@@ -45,11 +45,11 @@ function AvailabilityCard() {
               text-violet-400
             "
           >
-            <BriefcaseBusiness size={30} />
+            <BriefcaseBusiness size={20} />
           </div>
 
           <div>
-            <h3 className="text-3xl font-bold text-white">
+            <h3 className="text-2xl lg:text-3xl font-bold text-white">
               Currently Available For
             </h3>
 
@@ -59,7 +59,7 @@ function AvailabilityCard() {
 
         {/* Availability List */}
 
-        <div className="mt-10 space-y-5">
+        <div className="mt-8 lg:space-y-5 space-y-2">
           {availability.map((item, index) => (
             <motion.div
               key={item}
@@ -76,7 +76,7 @@ function AvailabilityCard() {
                 className="mt-1 shrink-0 text-violet-400"
               />
 
-              <span className="text-lg text-gray-300">
+              <span className="text-md md:text-lg text-gray-300">
                 {item}
               </span>
             </motion.div>

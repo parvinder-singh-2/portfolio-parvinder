@@ -24,8 +24,16 @@ function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "auto";
+
+    return () => {
+        document.body.style.overflow = "auto";
+    };
+}, [isOpen]);
+
   return (
-    <header className="fixed inset-x-0 top-0 z-50 px-4 pt-5 flex ">
+    <header className="fixed inset-x-0 top-0 z-50 px-4 pt-5">
       <motion.nav
         animate={{
           width: scrolled ? "90%" : "95%",
@@ -167,30 +175,24 @@ function Navbar() {
               <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{
-              opacity: 0,
-              y: -20,
-            }}
-            animate={{
-              opacity: 1,
-              y: 0,
-            }}
-            exit={{
-              opacity: 0,
-              y: -20,
-            }}
-            className="
-              mx-auto
-              mt-4
-              max-w-7xl
-              overflow-hidden
-              rounded-3xl
-              border
-              border-white/10
-              bg-black/80
-              backdrop-blur-xl
-              lg:hidden
-            "
+              initial={{ opacity: 0, y: -15 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -15 }}
+              transition={{ duration: .25 }}
+              className="
+                  mt-3
+                  absolute
+                  left-4
+                  right-4
+                  z-40
+                  rounded-3xl
+                  border
+                  border-white/10
+                  bg-black/90
+                  backdrop-blur-2xl
+                  shadow-2xl
+                  lg:hidden
+              "
           >
             <div className="flex flex-col p-6">
               {navLinks.map((item) => (
@@ -214,22 +216,20 @@ function Navbar() {
               ))}
 
               <a
-                href="/resume.pdf"
-                className="
-                  mt-6
-                  flex
-                  items-center
-                  justify-center
-                  gap-2
-                  rounded-2xl
-                  bg-gradient-to-r
-                  from-violet-600
-                  to-fuchsia-600
-                  px-5
-                  py-4
-                  font-semibold
-                  text-white
-                "
+                  href="/resume.pdf"
+                  className="
+                      mt-6
+                      flex
+                      h-12
+                      items-center
+                      justify-center
+                      rounded-xl
+                      bg-gradient-to-r
+                      from-violet-600
+                      to-fuchsia-600
+                      font-semibold
+                      text-white
+                  "
               >
                 <Download size={18} />
 

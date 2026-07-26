@@ -7,10 +7,10 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="relative py-10 md:py-14"
+      className="relative py-10 md:py-14 w-screen pl-3 pr-3"
     >
 
-      <div className="relative z-10 mx-auto max-w-7xl md:px-6 px-2 ">
+      <div className="relative z-10 mx-auto max-w-7xl md:px-6">
 
         <SectionHeading
           badgeIcon={Mail}

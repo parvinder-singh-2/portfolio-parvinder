@@ -72,11 +72,11 @@ function ContactInfoCard({
       {/* Text */}
 
       <div className="relative min-w-0 flex-1">
-        <h4 className="text-lg font-semibold text-white">
+        <h4 className="text-md lg:text-lg font-semibold text-white">
           {title}
         </h4>
 
-        <p className="mt-1 truncate text-gray-400">
+        <p className="mt-1 truncate text-sm lg:text-md text-gray-400">
           {value}
         </p>
       </div>

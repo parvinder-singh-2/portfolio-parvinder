@@ -13,11 +13,11 @@ function ContactInfo() {
       transition={{ duration: 0.6 }}
       className="
         rounded-3xl
-        w-full
+        w-screen
         border
         border-white/10
         bg-white/[0.03]
-        px-8
+        px-5
         pt-8
         pb-4
         backdrop-blur-xl
@@ -42,7 +42,7 @@ function ContactInfo() {
         </div>
 
         <div>
-          <h3 className="text-3xl font-bold text-white">
+          <h3 className="md:text-3xl text-2xl font-bold text-white">
             Let's Connect
           </h3>
 
@@ -52,7 +52,7 @@ function ContactInfo() {
 
       {/* Description */}
 
-      <p className="mt-3 text-lg leading-8 text-gray-400">
+      <p className="mt-3 md:text-lg text-md leading-6 md:leading-8 text-gray-400">
         Have an idea, opportunity, or just want to say hello?
         I'm always happy to connect and discuss exciting
         projects or career opportunities.
