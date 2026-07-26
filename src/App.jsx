@@ -14,8 +14,8 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <TechStack />
       <Projects />
+      <TechStack />
       <Achievements />
       <Experience />
       <Contact />

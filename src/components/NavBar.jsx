@@ -8,8 +8,8 @@ function Navbar() {
 
   const navLinks = [
     { title: "About", href: "#about" },
-    { title: "Stack", href: "#stack" },
     { title: "Projects", href: "#projects" },
+    { title: "Stack", href: "#stack" },
     { title: "Experience", href: "#experience" },
     { title: "Contact", href: "#contact" },
   ];
@@ -172,7 +172,10 @@ function Navbar() {
         >
           {isOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
-              <AnimatePresence>
+      </motion.nav>
+      
+      
+      <AnimatePresence>
         {isOpen && (
           <motion.div
               initial={{ opacity: 0, y: -15 }}
@@ -239,7 +242,6 @@ function Navbar() {
           </motion.div>
         )}
       </AnimatePresence>
-      </motion.nav>
     </header>
   );
 }
