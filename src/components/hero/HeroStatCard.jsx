@@ -19,15 +19,19 @@ function HeroStatCard({ icon: Icon, value, title, subtitle, }) {
         
           <div className="flex gap-5"> 
             <div className=" 
-              mb-6 
-              flex 
-              h-16 
-              w-16 
+              lg:mb-6 
+              mb-3
+              flex
+              h-10
+              w-10 
+              lg:h-16 
+              lg:w-16 
               items-center 
               justify-center 
               rounded-2xl 
               bg-violet-500/10 
-              text-3xl 
+              lg:text-3xl
+              text-xl 
               text-violet-400 
               transition-all 
               duration-300 
@@ -38,16 +42,16 @@ function HeroStatCard({ icon: Icon, value, title, subtitle, }) {
                 <Icon /> 
             </div> 
             
-            <h3 className="text-5xl font-bold"> 
+            <h3 className="lg:text-5xl text-3xl font-bold"> 
               {value} 
             </h3> 
           </div> 
           
-          <p className="mt-2 text-xl font-semibold"> 
+          <p className="lg:text-xl text-lg font-semibold"> 
             {title} 
           </p> 
           
-          <p className="mt-2 text-sm text-zinc-400"> 
+          <p className="mt-2 lg:text-sm text-xs text-zinc-400"> 
             {subtitle} 
           </p> 
         </div> 
