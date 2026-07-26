@@ -1,3 +1,5 @@
+import hero1 from "../../assets/hero1.png"
+
 function HeroSphere() {
   return (
     <div className="flex justify-center lg:justify-end">
@@ -9,8 +11,8 @@ function HeroSphere() {
           max-w-xs
           sm:max-w-sm
           md:max-w-md
-          lg:max-w-xl
-          xl:max-w-2xl
+          lg:max-w-lg
+          xl:max-w-xl
           h-auto
           object-contain
           select-none

@@ -8,7 +8,7 @@ function HeroButtons() {
       whileInView={{ opacity: 1, y: 0 }}
       initial={{ opacity: 0, y: 25 }}
       transition={{ duration: 0.7, delay: 0.6 }}
-      className="mt-8 flex flex-col gap-4 sm:flex-row">
+      className="mt-8 gap-4 grid sm:grid-cols-2">
 
       <button
         className="

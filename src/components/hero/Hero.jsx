@@ -1,3 +1,7 @@
+import HeroContent from "./HeroContent"
+import HeroSphere from "./HeroSphere"
+import HeroStats from "./HeroStats"
+
 function Hero() {
   return (
     <section
@@ -14,7 +18,7 @@ function Hero() {
 
         </div>
 
-        <div className="mt-14 md:mt-20">
+        <div className="mt-4 md:mt-8">
           <HeroStats />
         </div>
 

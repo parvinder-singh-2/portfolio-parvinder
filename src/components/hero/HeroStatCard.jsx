@@ -57,11 +57,11 @@ function HeroStatCard({
         </h3>
       </div>
 
-      <p className="mt-2 text-lg sm:text-xl font-semibold">
+      <p className="text-lg sm:text-xl font-semibold">
         {title}
       </p>
 
-      <p className="mt-2 text-xs sm:text-sm text-zinc-400">
+      <p className="text-xs sm:text-sm text-zinc-400">
         {subtitle}
       </p>
     </div>
