@@ -14,6 +14,7 @@ function ContactInfo() {
       className="
         rounded-3xl
         w-screen
+        md:w-full
         border
         border-white/10
         bg-white/[0.03]
