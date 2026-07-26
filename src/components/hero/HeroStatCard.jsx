@@ -12,8 +12,7 @@ function HeroStatCard({
       border
       border-white/10
       bg-white/[0.03]
-      p-5
-      sm:p-6
+      p-6
       backdrop-blur-xl
       transition-all
       duration-500
@@ -29,14 +28,9 @@ function HeroStatCard({
           className="
           mb-6
           flex
-          h-12
-          w-12
-          sm:h-14
-          sm:w-14
-          lg:h-16
-          lg:w-16
-          text-2xl
-          sm:text-3xl
+          h-16
+          w-16
+          text-3xl
           items-center
           justify-center
           rounded-3xl

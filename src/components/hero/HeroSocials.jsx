@@ -18,25 +18,29 @@ function HeroSocials() {
       whileInView={{ opacity: 1, y: 0 }}
       initial={{ opacity: 0, y: 25 }}
       transition={{ duration: 0.7, delay: 0.6 }}
-      className="mt-6 gap-4 flex">
+      className="mt-6 gap-4 flex justify-center">
 
       {socials.map((Icon, index) => (
         <button
           key={index}
           className="
           flex
-          h-14
-          w-14
+          lg:h-14
+          lg:w-14
+          h-20
+          w-20
           items-center
           justify-center
           rounded-full
           border
           border-violet-500
-          text-xl
+          lg:text-xl
+          text-3xl
           transition-all
           duration-300
           hover:-translate-y-1
-          hover:bg-violet-600
+        bg-violet-600
+          hover:bg-none
           hover:shadow-lg
           hover:shadow-violet-600/40
         "

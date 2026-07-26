@@ -19,17 +19,15 @@ function HeroButtons() {
         gap-3
         bg-violet-600
         rounded-xl
-        px-6
-        py-3.5
-        sm:px-8
-        sm:py-4
+        px-8
+        py-4
+        text-2xl
         font-semibold
         transition-all
         duration-300
         hover:bg-violet-500
         hover:scale-105
-        w-full 
-        sm:w-auto
+        w-auto
       "
       >
         View My Work
@@ -39,20 +37,18 @@ function HeroButtons() {
 
       <button
         className="
-        w-full s
-        m:w-auto
+        w-auto
         group
         flex
         items-center
         justify-center
         gap-3
+        text-2xl
         border
         border-violet-500
         rounded-xl
-        px-6
-        py-3.5
-        sm:px-8
-        sm:py-4
+        px-8
+        py-4
         font-semibold
         transition-all
         duration-300

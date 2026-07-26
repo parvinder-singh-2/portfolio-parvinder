@@ -8,11 +8,7 @@ function HeroSphere() {
         alt="Parvinder Singh Gandhi"
         className="
           w-full
-          max-w-xs
-          sm:max-w-xs
-          md:max-w-md
-          lg:max-w-lg
-          xl:max-w-xl
+          max-w-xl
           h-auto
           object-contain
           select-none
