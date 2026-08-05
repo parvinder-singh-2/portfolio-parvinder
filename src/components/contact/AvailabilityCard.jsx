@@ -122,7 +122,7 @@ function AvailabilityCard() {
         {/* CTA */}
 
         <motion.a
-          href="mailto:parvindersingh2304@gmail.com"
+          href="mailto:Mr.ParvinderSinghGandhi@gmail.com"
           whileHover={{
             scale: 1.02,
           }}

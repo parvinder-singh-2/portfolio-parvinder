@@ -49,9 +49,9 @@ export const projects = [
 
     image: messManagerImg,
 
-    github: "aaaaaaaaaa",
-    live: "aaaaaaaaaaaaaaa",
-    caseStudy: "aaaaaaaaaaa",
+    github: "https://github.com/parvinder-singh-2/mess-manager-frontend",
+    live: "https://mess-manager.vercel.app/",
+    caseStudy: "/projects/mess-manager",
 
     features: [
       "Customer Management",
@@ -121,9 +121,9 @@ export const projects = [
 
   {
     id: 2,
-    slug: "jal-shakti-drain-monitoring",
+    slug: "drainx-drain-monitoring",
 
-    title: "Jal Shakti Drain Monitoring System",
+    title: "DrainX - Drain Monitoring System",
     category: "IoT + AI Research Project",
 
     shortDescription:
@@ -134,9 +134,9 @@ export const projects = [
 
     image: drainMonitoringImg,
 
-    github: "aaaaaaa",
-    live: "aaaaaaaaaa",
-    caseStudy: "aaaaaaaaa",
+    github: "",
+    live: "",
+    caseStudy: "projects/DrainX",
 
     features: [
       "IoT Sensor Network",
@@ -215,9 +215,9 @@ export const projects = [
 
     image: portfolioImg,
 
-  github: "aaaaaaaaaa",
-  live: "aaaaaaaaaaaaaaa",
-  caseStudy: "aaaaaaaaaaa",
+  github: "https://github.com/parvinder-singh-2/portfolio-parvinder",
+  live: "https://portfolio-parvinder.vercel.app/",
+  caseStudy: "projects/portfolio",
 
     features: [
       "Modern UI",
@@ -292,9 +292,9 @@ export const projects = [
 
   image: spidersImg,
 
-  github: "aaaaaaaaaa",
-  live: "aaaaaaaaaaaaaaa",
-  caseStudy: "aaaaaaaaaaa",
+  github: "",
+  live: "",
+  caseStudy: "/projects/spiders",
 
   features: [
     "Autonomous Quadruped Navigation",

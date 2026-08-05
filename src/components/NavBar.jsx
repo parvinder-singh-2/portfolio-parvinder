@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, X, Download } from "lucide-react";
+import { Menu, X, Download } from "lucide-react"; 
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -133,8 +133,9 @@ function Navbar() {
             </a>
           ))}
         </div>
-                <motion.a
-          href="/resume.pdf"
+        <motion.a
+          href="/Parvinder_Singh_Gandhi_Resume.pdf"
+          download="Parvinder_Singh_Gandhi_Resume.pdf"
           whileHover={{ scale: 1.04 }}
           whileTap={{ scale: 0.98 }}
           className="
@@ -219,7 +220,8 @@ function Navbar() {
               ))}
 
               <a
-                  href="/resume.pdf"
+                  href="/Parvinder_Singh_Gandhi_Resume.pdf"
+                  download="Parvinder_Singh_Gandhi_Resume.pdf"
                   className="
                       mt-6
                       flex

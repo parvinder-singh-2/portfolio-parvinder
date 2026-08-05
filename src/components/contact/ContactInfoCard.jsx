@@ -6,6 +6,7 @@ function ContactInfoCard({
   value,
   icon: Icon,
   href,
+  download,
   external = false,
 }) {
   const Component = href ? motion.a : motion.div;
@@ -13,6 +14,7 @@ function ContactInfoCard({
   return (
     <Component
       href={href}
+      download={download} 
       target={external ? "_blank" : undefined}
       rel={external ? "noopener noreferrer" : undefined}
       whileHover={{ y: -3 }}

@@ -14,9 +14,9 @@ import {
 export const contactInfo = [
   {
     title: "Email",
-    value: "parvindersingh2304@gmail.com",
+    value: "Mr.ParvinderSinghGandhi@gmail.com",
     icon: Mail,
-    href: "mailto:parvindersingh2304@gmail.com",
+    href: "mailto:Mr.ParvinderSinghGandhi@gmail.com",
   },
   {
     title: "Location",
@@ -25,21 +25,22 @@ export const contactInfo = [
   },
   {
     title: "LinkedIn",
-    value: "linkedin.com/in/parvinder-singh-gandhi2304",
+    value: "https://www.linkedin.com/in/itzparvinder/",
     icon: Network,
-    href: "https://linkedin.com/in/parvinder-singh-gandhi2304",
+    href: "https://www.linkedin.com/in/itzparvinder/",
   },
   {
     title: "GitHub",
-    value: "github.com/parvinder2304",
+    value: "https://github.com/parvinder-singh-2",
     icon: FolderGit2,
-    href: "https://github.com/parvinder2304",
+    href: "https://github.com/parvinder-singh-2",
   },
   {
     title: "Resume",
     value: "Download Resume",
     icon: FileText,
-    href: "/resume.pdf",
+    href: "/Parvinder_Singh_Gandhi_Resume.pdf",
+    download: "Parvinder_Singh_Gandhi_Resume.pdf",
     external: true,
   },
 ];
@@ -75,7 +76,7 @@ export const quickLinks = [
     title: "GitHub",
     subtitle: "View My Projects",
     icon: FolderGit2,
-    href: "https://github.com/parvinder2304",
+    href: "https://github.com/parvinder-singh-2",
   },
   {
     title: "LinkedIn",
@@ -87,7 +88,8 @@ export const quickLinks = [
     title: "Resume",
     subtitle: "Download PDF",
     icon: FileText,
-    href: "/resume.pdf",
+    href: "/Parvinder_Singh_Gandhi_Resume.pdf",
+    download: "Parvinder_Singh_Gandhi_Resume.pdf",
   },
   {
     title: "Email",
