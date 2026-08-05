@@ -1,65 +1,131 @@
 import {
-  FaReact,
-  FaPython,
+  FaLaptopCode,
+  FaServer,
   FaDatabase,
   FaTools,
-  FaCode,
-  FaGitAlt,
-  FaDocker,
-  FaAws,
+  FaBrain,
 } from "react-icons/fa";
 
 import {
-  SiFastapi,
-  SiPostgresql,
+  FaProjectDiagram,
+  FaPuzzlePiece,
+  FaShieldAlt,
+  FaCodeBranch,
+  FaCubes,
+} from "react-icons/fa";
+
+import {
+  SiReact,
   SiJavascript,
-  SiTailwindcss,
+  SiTypescript,
   SiHtml5,
   SiCss,
-  SiGithubactions,
+  SiTailwindcss,
+  SiFramer,
+  SiVite,
+
+  SiPython,
+  SiFastapi,
+  SiJsonwebtokens,
+  SiPydantic,
+
+  SiPostgresql,
+  SiSqlite,
+  SiSupabase,
+  SiSqlalchemy,
+
+  SiDocker,
+  SiGit,
+  SiGithub,
+  SiPostman,
   SiVercel,
   SiRender,
-  SiSqlalchemy,
-  SiPostman,
+
 } from "react-icons/si";
-
-import {
-  MdOutlineDesktopWindows,
-  MdOutlineMenuBook,
-} from "react-icons/md";
-
-import {
-  TbBinaryTree2,
-  TbTopologyStar3,
-  TbCloudComputing,
-  TbBrain,
-} from "react-icons/tb";
 
 export const techCategories = [
   {
     id: 1,
     title: "Frontend",
-    icon: MdOutlineDesktopWindows,
-    skills: [
-      "React",
-      "JavaScript (ES6+)",
-      "HTML5",
-      "CSS3",
-      "Tailwind CSS",
-      "Responsive Design",
+    icon: FaLaptopCode,
+    description: "Modern responsive interfaces and interactive user experiences.",
+
+    technologies: [
+      {
+        name: "React",
+        icon: SiReact,
+        color: "#61DAFB",
+      },
+      {
+        name: "JavaScript",
+        icon: SiJavascript,
+        color: "#F7DF1E",
+      },
+      {
+        name: "TypeScript",
+        icon: SiTypescript,
+        color: "#3178C6",
+      },
+      {
+        name: "HTML5",
+        icon: SiHtml5,
+        color: "#E34F26",
+      },
+      {
+        name: "CSS3",
+        icon: SiCss,
+        color: "#1572B6",
+      },
+      {
+        name: "Tailwind",
+        icon: SiTailwindcss,
+        color: "#38BDF8",
+      },
+      {
+        name: "Framer",
+        icon: SiFramer,
+        color: "#ffffff",
+      },
+      {
+        name: "Vite",
+        icon: SiVite,
+        color: "#646CFF",
+      },
     ],
   },
 
   {
     id: 2,
     title: "Backend",
-    icon: FaPython,
-    skills: [
-      "Python",
-      "FastAPI",
-      "REST APIs",
-      "Pydantic",
-      "JWT Authentication",
+    icon: FaServer,
+    description: "Building secure, scalable APIs and backend systems.",
+
+    technologies: [
+      {
+        name: "Python",
+        icon: SiPython,
+        color: "#3776AB",
+      },
+      {
+        name: "FastAPI",
+        icon: SiFastapi,
+        color: "#009688",
+      },
+      {
+        name: "REST API",
+        icon: FaServer,
+        color: "#A855F7",
+      },
+      {
+        name: "JWT",
+        icon: SiJsonwebtokens,
+        color: "#ffffff",
+      },
+      {
+        name: "Pydantic",
+        icon: SiPydantic,
+        color: "#E92063",
+      },
     ],
   },
 
@@ -67,81 +133,110 @@ export const techCategories = [
     id: 3,
     title: "Database",
     icon: FaDatabase,
-    skills: [
-      "PostgreSQL",
-      "SQL",
-      "SQLAlchemy",
-      "Database Design",
-      "Migrations",
+    description: "Reliable data storage and efficient database management.",
+
+    technologies: [
+      {
+        name: "PostgreSQL",
+        icon: SiPostgresql,
+        color: "#336791",
+      },
+      {
+        name: "SQLAlchemy",
+        icon: SiSqlalchemy,
+        color: "#D71F00",
+      },
+      {
+        name: "SQLite",
+        icon: SiSqlite,
+        color: "#003B57",
+      },
+      {
+        name: "Supabase",
+        icon: SiSupabase,
+        color: "#3ECF8E",
+      },
     ],
   },
 
   {
     id: 4,
-    title: "Tools & DevOps",
+    title: "Tools",
     icon: FaTools,
-    skills: [
-      "Git & GitHub",
-      "Docker",
-      "GitHub Actions",
-      "Vercel",
-      "Render",
-      "Postman",
+    description: "Development, deployment and collaboration workflow.",
+
+    technologies: [
+      {
+        name: "Git",
+        icon: SiGit,
+        color: "#F05032",
+      },
+      {
+        name: "GitHub",
+        icon: SiGithub,
+        color: "#ffffff",
+      },
+      {
+        name: "Docker",
+        icon: SiDocker,
+        color: "#2496ED",
+      },
+      {
+        name: "Postman",
+        icon: SiPostman,
+        color: "#FF6C37",
+      },
+      {
+        name: "Vercel",
+        icon: SiVercel,
+        color: "#ffffff",
+      },
+      {
+        name: "Render",
+        icon: SiRender,
+        color: "#46E3B7",
+      },
     ],
   },
 
   {
-    id: 5,
-    title: "Others",
-    icon: FaCode,
-    skills: [
-      "Problem Solving",
-      "Data Structures & Algorithms",
-      "System Design",
-      "OOP Concepts",
-    ],
-  },
-];
+  id: 5,
+  title: "Core Skills",
+  icon: FaBrain,
+  description:
+    "Engineering principles and software development fundamentals.",
 
-export const learningStack = {
-  title: "Currently Learning",
-
-  icon: MdOutlineMenuBook,
-
-  topics: [
+  technologies: [
     {
-      id: 1,
-      icon: FaPython,
-      title: "Advanced Python",
-      description: "Deepening core concepts",
+      name: "DSA",
+      icon: FaProjectDiagram,
+      color: "#3B82F6",
     },
-
     {
-      id: 2,
-      icon: TbBinaryTree2,
-      title: "Data Structures & Algorithms",
-      description: "Preparing for SDE interviews",
+      name: "OOP",
+      icon: FaCubes,
+      color: "#8B5CF6",
     },
-
     {
-      id: 3,
-      icon: TbTopologyStar3,
-      title: "System Design",
-      description: "Scalable architecture patterns",
+      name: "System Design",
+      icon: FaCodeBranch,
+      color: "#F59E0B",
     },
-
     {
-      id: 4,
-      icon: TbCloudComputing,
-      title: "Cloud Technologies",
-      description: "AWS fundamentals & deployment",
+      name: "Problem Solving",
+      icon: FaPuzzlePiece,
+      color: "#10B981",
     },
-
     {
-      id: 5,
-      icon: TbBrain,
-      title: "Machine Learning Foundations",
-      description: "Exploring ML basics",
+      name: "REST Architecture",
+      icon: FaProjectDiagram,
+      color: "#EF4444",
+    },
+    {
+      name: "Authentication",
+      icon: FaShieldAlt,
+      color: "#06B6D4",
     },
   ],
-};
+},
+];

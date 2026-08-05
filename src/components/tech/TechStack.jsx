@@ -1,18 +1,14 @@
 import { motion } from "framer-motion";
 import { FaBriefcase } from "react-icons/fa";
 
-import {
-  techCategories,
-  learningStack,
-} from "../../data/techStackData";
-
-import TechCategoryCard from "./TechCategoryCard";
+import { techCategories } from "../../data/techStackData";
+import TechRow from "./TechRow";
 
 const container = {
   hidden: {},
   show: {
     transition: {
-      staggerChildren: 0.12,
+      staggerChildren: 0.15,
     },
   },
 };
@@ -20,7 +16,7 @@ const container = {
 const item = {
   hidden: {
     opacity: 0,
-    y: 40,
+    y: 30,
   },
   show: {
     opacity: 1,
@@ -33,84 +29,88 @@ const item = {
 
 function TechStack() {
   return (
-    <section className="relative min-h-screen items-center justify-center flex" id="stack">
+    <section
+      id="stack"
+      className="relative overflow-hidden py-24"
+    >
+      {/* Background Glow */}
 
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="absolute left-1/2 top-40 h-[450px] w-[450px] -translate-x-1/2 rounded-full bg-violet-600/10 blur-[180px]" />
+
+      <div className="relative mx-auto max-w-7xl px-6">
 
         {/* Heading */}
 
         <motion.div
+          variants={container}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: .25 }}
-          variants={container}
+          viewport={{ once: true }}
           className="text-center"
         >
           <motion.p
             variants={item}
-            className="mb-5 flex justify-center items-center gap-3 text-xl tracking-[0.2em] uppercase text-violet-400"
+            className="mb-5 flex items-center justify-center gap-3 uppercase tracking-[0.25em] text-violet-400"
           >
             <FaBriefcase />
-            My Skills
+
+            Tech Stack
           </motion.p>
 
           <motion.h2
             variants={item}
-            className="text-4xl sm:text-5xl lg:text-6xl font-black"
+            className="text-4xl font-black sm:text-5xl lg:text-6xl"
           >
             Technologies I{" "}
+
             <span className="bg-gradient-to-r from-blue-400 via-violet-400 to-purple-500 bg-clip-text text-transparent">
               Work With
             </span>
           </motion.h2>
 
-          <motion.div
-            variants={item}
-            className="mx-auto my-6 flex items-center justify-center gap-4"
-          >
-            <div className="h-[2px] w-24 bg-violet-500" />
-            <div className="h-2 w-2 rounded-full bg-violet-500" />
-            <div className="h-[2px] w-24 bg-violet-500" />
-          </motion.div>
-
           <motion.p
             variants={item}
-            className="mx-auto max-w-3xl text-lg text-gray-400"
+            className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-gray-400"
           >
-            I use modern technologies and tools to build scalable,
-            efficient and user-friendly web applications.
+            I build scalable web applications using modern
+            frameworks, cloud platforms and engineering tools
+            focused on performance, maintainability and user
+            experience.
           </motion.p>
         </motion.div>
 
-        {/* Cards */}
+        {/* Tech Rows */}
 
         <motion.div
           variants={container}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: .2 }}
-          className="mt-16 grid gap-6 sm:grid-cols-2 xl:grid-cols-5"
+          viewport={{ once: true }}
+          className="
+            mt-20
+
+            rounded-[36px]
+
+            border
+
+            border-violet-500/20
+
+            bg-white/[0.03]
+
+            backdrop-blur-xl
+
+            p-6
+
+            lg:p-10
+          "
         >
           {techCategories.map((category) => (
-            <TechCategoryCard
+            <TechRow
               key={category.id}
               category={category}
             />
           ))}
         </motion.div>
-
-        {/* Footer
-
-        <motion.div
-          variants={item}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className="mt-12"
-        >
-          <LearningCard learning={learningStack} />
-        </motion.div> */}
-
       </div>
     </section>
   );
