@@ -8,7 +8,7 @@ function ProjectActions({ github, live, caseStudy }) {
           href={github}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn-primary flex items-center gap-2 justify-center bg-black py-2 rounded-2xl"
+          className="btn-primary items-center gap-2 justify-center bg-black py-2 rounded-2xl hidden lg:flex"
         >
           <FaGithub />
           GitHub
@@ -20,7 +20,7 @@ function ProjectActions({ github, live, caseStudy }) {
           href={live}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn-secondary flex items-center gap-2 justify-center bg-purple-700 py-2 rounded-2xl"
+          className="btn-secondary items-center gap-2 justify-center bg-purple-700 py-2 rounded-2xl hidden lg:flex"
         >
           <FaExternalLinkAlt />
           Live Demo

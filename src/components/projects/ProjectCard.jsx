@@ -7,7 +7,7 @@ function ProjectCard({ project }) {
     <>
       <div className="rounded-3xl border border-violet-500/20 bg-[#0A0813] p-3 lg:p-8">
 
-        <div className="grid lg:grid-cols-2 gap-10 items-center justify-center">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-10 items-center">
 
           <ProjectPreview image={project.image} />
 
@@ -17,7 +17,9 @@ function ProjectCard({ project }) {
 
       </div>
 
-      <ProjectStats stats={project.stats} />
+      <div className="hidden lg:block">
+        <ProjectStats stats={project.stats} />
+      </div>
     </>
   );
 }
