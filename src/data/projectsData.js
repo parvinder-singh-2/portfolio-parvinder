@@ -215,9 +215,9 @@ export const projects = [
 
     image: portfolioImg,
 
-    github: "",
-    live: "",
-    caseStudy: "",
+  github: "aaaaaaaaaa",
+  live: "aaaaaaaaaaaaaaa",
+  caseStudy: "aaaaaaaaaaa",
 
     features: [
       "Modern UI",

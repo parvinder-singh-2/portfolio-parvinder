@@ -35,7 +35,7 @@ function ProjectActions({ github, live, caseStudy }) {
           className="btn-secondary flex items-center gap-2 justify-center bg-violet-500/15 text-violet-400 py-2 rounded-2xl"
         >
           <FaFileAlt />
-          Case Study
+          Read More
         </a>
       )}
     </div>
