@@ -14,7 +14,7 @@ function ProjectContent({ project }) {
         {project.title}
       </h3>
 
-      <p className="mt-3 text-gray-400 leading-8">
+      <p className="mt-3 text-gray-400 leading-8 line-clamp-2">
         {project.description}
       </p>
 

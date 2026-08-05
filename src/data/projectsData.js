@@ -5,9 +5,18 @@ import {
   RiDatabase2Line,
   RiShieldCheckLine,
   RiCalendarScheduleLine,
+  RiToolsLine,
+  RiRouteLine,
+  RiRadarLine,
+  RiWalkLine,
+  RiRobot2Line,
+  RiMapPin2Line,
+  RiCpuLine,
+  RiCameraLensLine,
+  RiShareForwardLine,
 } from "react-icons/ri";
 
-import { TbApi, TbBrandDocker } from "react-icons/tb";
+import { TbAntenna, TbApi, TbBrain, TbBrandDocker } from "react-icons/tb";
 import { FaReact, FaPython, FaGithub } from "react-icons/fa";
 import {
   SiFastapi,
@@ -19,10 +28,10 @@ import {
   SiVite,
 } from "react-icons/si";
 
-import messManagerImg from "../assets/projects/messmanager.webp";
-import drainMonitoringImg from "../assets/projects/drain-moniter.webp";
-import portfolioImg from "../assets/projects/portfolio.webp";
-import spidersImg from "../assets/projects/spider.webp";
+import messManagerImg from "../assets/projects/messmanager.png";
+import drainMonitoringImg from "../assets/projects/DrainX.png";
+import portfolioImg from "../assets/projects/portfolio.png";
+import spidersImg from "../assets/projects/spiders.png";
 
 export const projects = [
   {
@@ -269,66 +278,87 @@ export const projects = [
   },
 
   {
-    id: 4,
-    slug: "spiders",
+  id: 4,
+  slug: "spiders",
 
-    title: "SPIDERS",
-    category: "Desktop Utility Software",
+  title: "SPIDERS",
+  category: "AI Swarm Robotics & Defence Technology",
 
-    shortDescription:
-      "A productivity-focused desktop application designed to simplify day-to-day workflows.",
+  shortDescription:
+    "An AI-powered autonomous swarm of quadruped robots designed for battlefield reconnaissance, terrain exploration, and intelligent mine detection.",
 
-    description:
-      "SPIDERS is a desktop software project focused on improving workflow efficiency through automation, intuitive interfaces, and modular architecture.",
+  description:
+    "SPIDERS (Swarm Platform for Intelligent Detection, Exploration & Reconnaissance Systems) is an advanced defence research project currently under development. The platform consists of multiple lightweight autonomous quadruped robots capable of navigating challenging terrains while collaboratively exploring unknown environments. Through AI-driven swarm intelligence, each robot dynamically shares explored regions, distributes search tasks, detects potential threats, and transmits real-time battlefield intelligence to a centralized command system. The project integrates robotics, computer vision, embedded systems, machine learning, mesh communication, and modern web technologies to reduce human exposure in hazardous pre-war and post-war environments.",
 
-    image: spidersImg,
+  image: spidersImg,
 
-    github: "",
-    live: "",
-    caseStudy: "",
+  github: "aaaaaaaaaa",
+  live: "aaaaaaaaaaaaaaa",
+  caseStudy: "aaaaaaaaaaa",
 
-    features: [
-      "Desktop Application",
-      "Workflow Automation",
-      "Modular Architecture",
-      "User Friendly Interface",
-      "Performance Focused",
-      "Scalable Design",
-    ],
+  features: [
+    "Autonomous Quadruped Navigation",
+    "AI Swarm Intelligence",
+    "Collaborative Terrain Exploration",
+    "Dynamic Task Allocation",
+    "12-DOF Walking Gait",
+    "Terrain Adaptive Locomotion",
+  ],
 
-    techStack: [],
+  techStack: [
+    {
+      name: "Python",
+      icon: FaPython,
+    },
+    {
+      name: "ESP32",
+      icon: SiEspressif,
+    },
+    {
+      name: "LoRa",
+      icon: TbAntenna,
+    },
+    {
+      name: "Embedded Systems",
+      icon: RiCpuLine,
+    },
+    {
+      name: "GPS Navigation",
+      icon: RiMapPin2Line,
+    }
+  ],
 
-    stats: [
-      {
-        label: "Platform",
-        value: "Desktop",
-        icon: RiLayoutGridLine,
-      },
-      {
-        label: "Architecture",
-        value: "Modular",
-        icon: RiDatabase2Line,
-      },
-      {
-        label: "Automation",
-        value: "Yes",
-        icon: TbApi,
-      },
-      {
-        label: "Performance",
-        value: "Optimized",
-        icon: RiShieldCheckLine,
-      },
-      {
-        label: "Status",
-        value: "Completed",
-        icon: RiCalendarScheduleLine,
-      },
-      {
-        label: "Source",
-        value: "Private",
-        icon: FaGithub,
-      },
-    ],
-  },
+  stats: [
+    {
+      label: "Robots",
+      value: "4",
+      icon: RiRobot2Line,
+    },
+    {
+      label: "Degrees of Freedom",
+      value: "12 DOF",
+      icon: RiWalkLine,
+    },
+    {
+      label: "Communication",
+      value: "LoRa Mesh",
+      icon: RiRadarLine,
+    },
+    {
+      label: "Navigation",
+      value: "Autonomous",
+      icon: RiRouteLine,
+    },
+    {
+      label: "Mission",
+      value: "Reconnaissance",
+      icon: RiShieldCheckLine,
+    },
+    {
+      label: "Status",
+      value: "In Development",
+      icon: RiToolsLine,
+    },
+  ],
+},
 ];
